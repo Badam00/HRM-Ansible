@@ -1,0 +1,8 @@
+download_url: https://galaxy.ansible.com/download/fedora-linux_system_roles-1.35.2.tar.gz
+format_version: 1.0.0
+name: linux_system_roles
+namespace: fedora
+server: https://galaxy.ansible.com/api/
+signatures: []
+version: 1.35.2
+version_url: https://galaxy.ansible.com/api/v2/collections/fedora/linux_system_roles/versions/1.35.2/

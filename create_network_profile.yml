@@ -1,0 +1,6 @@
+---
+- name: Netowrk Profile Configuration
+  hosts: webservers
+  
+  roles:
+    - fedora.linux_system_roles.network

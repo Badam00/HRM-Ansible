@@ -1,0 +1,23 @@
+---
+- name: Powertools
+  hosts: webservers
+  vars_files:
+    - group_vars/PTvars.yml
+  tasks:
+    - name: "Install powertools"
+      ansible.builtin.dnf:
+        name: "{{package}}"
+        #enablerepo: powertools
+        
+    - name: "Enable powertools"
+      ansible.builtin.command:
+        cmd: "dnf config-manager --set-enabled powertools"
+      notify:
+        - install_program
+        
+  handlers:
+    - name: install_program
+      ansible.builtin.dnf:
+        state: present
+        name:
+          - "{{auto}}"

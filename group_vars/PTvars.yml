@@ -1,0 +1,2 @@
+package: dnf-plugins-core
+auto: autogen.x86_64
